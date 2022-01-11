@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+import django_heroku
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+django_heroku.settings(locals())
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -123,6 +126,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import django_heroku
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-django_heroku.settings(locals())
+

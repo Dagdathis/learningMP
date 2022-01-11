@@ -3,6 +3,5 @@ filelock==3.4.2
 platformdirs==2.4.1
 six==1.16.0
 virtualenv==20.13.0
-
 gunicorn
 django-heroku
